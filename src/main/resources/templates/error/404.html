@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Sin embargo, Spring Boot solo necesita un archivo llamado error.html en la raiz de la carpeta --> 
+  <!-- template; Para asignar una pagina personalizada a un error http especifico, Spring Boot -->
+  <!-- tambien lo carga automaticamente pero necesita estar en una ruta diferente, p.e., /template/error -->
+	
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	<link rel="stylesheet" th:href="@{/css/fnmt.css}">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+    
+   <!--  Iconos nuevos en sustitución de los glyp.icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+<!--   <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+  
+  <!-- Nuestro css-->
+<!--     <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}"> -->
+	
+  <style type="text/css">
+    body{
+      padding-top:5%;
+    }
+	
+    img{
+      width:100%;
+    }
+		
+  </style>
+</head>
+<body>
+  <div class="container text-center">
+	<div class="mx-auto col-10 card">
+	  <div class="card-header">
+	    <h4>404 P&aacute;gina no encontrada</h4>
+      </div>
+      <div class="card-body">
+        <a href="/" ><img src="static/img/error/404.png" th:src="@{/img/error/404.png}"/></a>
+        <p> FUENTE: <b>https://www.computersrepaired.com.au/images/404-page-technogeek.png</b></p>
+      </div>
+	</div>	    
+  </div>
+</body>
+</html>

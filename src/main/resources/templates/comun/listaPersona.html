@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="comun/header::header">
+
+
+<div id="container">
+<body>
+<div class="col-md-12">
+			<table id="tablaFiltrosCabeceraBlankAndSelectMgd" class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>nombre</th>
+							<th>apelllido</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="per : ${listaPersona}">
+								
+								<td class="col-md-3"  >
+							<a  th:name="nombre" title="nombre">
+									<span th:text="${per?.nombre}"/>
+								</a>
+				
+							</td>
+								<td class="col-md-2"  >
+							<a  th:name="apellido" title="apellido">
+									<span th:text="${per?.apellido}"/>
+								</a>
+				
+							</td>
+							
+						
+						</tr>		
+					</tbody>
+				</table>	
+		</div>	
+
+
+</body>
+</div>
+</html>
+

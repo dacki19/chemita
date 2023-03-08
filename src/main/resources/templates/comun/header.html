@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header th:fragment="header">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/stickyFooter.css}"/>
+	<link rel="stylesheet" th:href="@{/css/waitMe.min.css}"/>
+	
+<!-- 	<link rel="stylesheet" th:href="@{/css/dataTables.bootstrap.min.css}"/> -->
+	<!-- 4.0.7 -->
+	<!--i 4.0.8 -->
+	<!--link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/-->
+	<link  th:href="@{/assets/dropzonejs/dropzone.css}"   rel="stylesheet"/>
+	<link  th:href="@{/assets/toastr/toastr.min.css}"  rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+	
+	<script th:src="@{/assets/dropzonejs/dropzone.min.js}"></script>
+	<script th:src="@{/assets/toastr/toastr.min.js}"></script>
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<!-- WEB SOCKET -->
+	<script th:src="@{/assets/socket/stomp.js}"></script>
+	<script th:src="@{/assets/socket/sockjs-0.3.4.js}"></script>
+	<!-- WEB SOCKET -->
+<!-- 	    	<script th:src="@{/webjars/jquery/sockjs-0.3.4.js}"></script> -->
+	<!--<script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>  -->
+	<!-- script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script-->
+	<!--f 4.0.8 -->
+	<script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+<!-- 	<script th:src="@{/js/pnumerado.js}"></script> -->
+<!-- 	<script th:src="@{/static/js/waitMe.min.js}"></script> -->
+	<script th:src="@{/js/jquery.dataTables.min.js}"></script>
+	<script th:src="@{/js/dataTables.bootstrap.min.js}"></script>
+	<script th:src="@{/js/spanish.js}"></script>
+	<script th:src="@{/js/validator.js}"></script>
+	<script th:src="@{/js/dataTablesArquetipo.js}"></script>
+	
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+	
+	
+	<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  margin-left: 40%;
+  margin-top: 10%;
+  
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+				
+				
+
+
+
+
+	
+<!--	<div class="loader" id="loading" align="center">-->
+				
+<!--					</div>-->
+		
+</header>
